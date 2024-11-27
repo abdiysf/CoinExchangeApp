@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+//    var service = Service()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            ExchangeRateView()
         }
         .padding()
+//        .task {
+//            let service = Service()
+//            await service.fetchExchangeRates(for: "USD")
+//        }
     }
 }
 
